@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Solicitação de Férias</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: #fff; /* alteração de cor de fundo */
+    }
+    /* Estilo para os títulos */
+     h2 {
+      padding: 0px;
+      color: #1c271f; /* cor do texto */
+    }
+
+    h1 {
+        color: #284ea7;  
+    }
+
+    /* Estilo para os inputs */
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select {
+      border: 2px solid #242724;
+      background-color: #f2f2f2;/* borda verde */
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="number"],
+    select::hover {
+        border: 2px solid #147814;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-4 mb-4">SOLICITAÇÃO DE FÉRIAS</h1>
+    <form>
+      <div class="form-group row">
+        <div class="col-md-6">
+          <label for="nome">Colaborador:</label>
+          <input type="text" class="form-control" id="nome" placeholder="Digite o nome do colaborador">
+        </div>
+        <div class="col-md-6">
+          <label for="data">Data:</label>
+          <input type="date" class="form-control" id="data">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-md-6">
+          <label for="status">Status:</label>
+          <input type="text" class="form-control" id="status" placeholder="Digite o status">
+        </div>
+        <div class="col-md-6">
+          <label for="departamento">Departamento:</label>
+          <select class="form-control" id="departamento">
+            <option>Selecione...</option>
+            <option>Departamento A</option>
+            <option>Departamento B</option>
+            <option>Departamento C</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-md-6">
+          <label for="custo">Centro do Custo:</label>
+          <input type="text" class="form-control" id="custo" placeholder="Digite o centro do custo">
+        </div>
+        <div class="col-md-6">
+          <label for="unidade">Unidade de Negócio:</label>
+          <input type="text" class="form-control" id="unidade" placeholder="Digite a unidade de negócio">
+        </div>
+      </div>
+      <div class="form-section">
+        <h2>Período Aquisitivo</h2>
+        <div class="form-group row">
+          <div class="col-md-6">
+            <label for="inicio">Início:</label>
+            <input type="date" class="form-control" id="inicio">
+          </div>
+          <div class="col-md-6">
+            <label for="fim">Fim:</label>
+            <input type="date" class="form-control" id="fim">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-md-6">
+            <label for="saldo">Dias de Saldo:</label>
+            <input type="number" class="form-control" id="saldo">
+          </div>
+          <div class="col-md-6">
+            <label for="limite">Limite:</label>
+            <input type="date" class="form-control" id="limite">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-md-6">
+            <label for="inicio-ferias">Início das Férias:</label>
+            <input type="date" class="form-control" id="inicio-ferias">
+          </div>
+          <div class="col-md-6">
+            <label for="dias-ferias">Dias:</label>
+            <input type="number" class="form-control" id="dias-ferias">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-md-6">
+            <label for="final-ferias">Final das Férias:</label>
+            <input type="date" class="form-control" id="final-ferias">
+          </div>
+          <div class="col-md-6">
+            <label for="abono">Abono</label>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="abono">
+              <label class="form-check-label" for="abono">Sim</label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="parcela">1ª Parcela do 13º Terceiro:</label>
+          <select class="form-control" id="parcela">
+            <option>Selecione...</option>
+            <option>Sim</option>
+            <option>Não</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+    <hr>
+    <p>Entregue a carteira de trabalho e previdência social do funcionário na adm. de pessoal para anotações de férias.</p>
+  </div>
+</body>
+</html>
